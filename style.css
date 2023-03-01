@@ -2,7 +2,12 @@
 marrom = #4B3000
 verde = #006E62
 branco = #DFE0DF*/
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+body{
+    background-color: #DFE0DF;
+}
 
 *{
     padding: 0;
@@ -66,4 +71,36 @@ header .container nav .nav-list li a:hover::after{
 header .container nav .nav-list li a:hover::before{
     height: 100%;
     mix-blend-mode: difference;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+}
+#home .paragraph-home{
+    /* border: 2px solid black; */
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#home .paragraph-home h2{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 100px;
+}
+#home .paragraph-home p{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+#home .image-home img{
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
