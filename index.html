@@ -12,16 +12,28 @@
     <header>
         <div class="container">
             <div class="site-brand">
-                <img src="./imagens/ABELHA_VIVA-removebg-preview.png" alt="">
+                <a href="#home"><img src="./imagens/ABELHA SEM BG.png" alt=""></a>
             </div>
             <nav>
                 <ul class="nav-list">
                     <li><a href="">Início</a></li>
                     <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Produtos</a></li>
+                    <li><a href="#products">Produtos</a></li>
                     <li><a href="">Contato</a></li>
                 </ul> 
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+                </div>
             </nav>
+        </div>
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="">Início</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
         </div>
     </header>
 
@@ -30,6 +42,7 @@
             <div class="paragraph-home">
                 <h2>ABELHA VIVA</h2>
                 <p>Somos uma empresa apaixonada pela produção de mel de alta qualidade e saudável.<br> Trabalhamos duro para garantir que nossas abelhas sejam criadas e tratadas com o maior cuidado e que o processo de produção do mel seja feito de maneira sustentável.</p>
+                <a href="#products"><button id="btn-home">Produtos</button></a>
             </div>
             <div class="image-home">
                 <img src="./imagens/honey-bee-honey-bee-food-sweetness-honey-b918c43223fabbb5173968b0d4b0788d.png" alt="">
@@ -37,7 +50,6 @@
         </section>
     </main>
 
-
-</body>
+<script src="index.js"></script></body>
 
 </html>
