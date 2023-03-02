@@ -7,6 +7,7 @@ branco = #DFE0DF*/
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
     background-color: #DFE0DF;
@@ -23,7 +24,7 @@ body{
 
 header{
     background-color: #FFD03A;
-    box-shadow: 0px 3px 10px #FFD03A;
+    box-shadow: 0px 3px 10px #111;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -80,48 +81,6 @@ header .container nav .nav-list li a:hover::before{
     height: 100%;
     mix-blend-mode: difference;
 }
-.mobile-menu-icon{
-    display: none;
-}
-.mobile-menu{
-    display: none;
-}
-@media screen and (max-width: 930px){
-    header .container{
-        padding: 1.5rem 4rem;
-    }
-    .nav-list li{
-        display: none;
-    }
-    .mobile-menu-icon{
-        display: block;
-    }
-    .mobile-menu-icon button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-        padding-top: 300px;
-    }
-
-    .mobile-menu .nav-list li{
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .open{
-        display: block;
-    }
-}
-
-
-
-
-
 #home{
     display: flex;
     justify-content: center;
@@ -144,6 +103,14 @@ header .container nav .nav-list li a:hover::before{
     font-size: 90px;
     font-weight: 100;
     color: #111;
+    line-height: 50px;
+}
+#home .paragraph-home h2 span{
+    font-family:'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 8px;
+    padding-left: 10px;
 }
 #home .paragraph-home p{
     font-family: 'Roboto', sans-serif;
@@ -197,4 +164,65 @@ header .container nav .nav-list li a:hover::before{
 }  
 #btn-home:hover{
     color: #DFE0DF;
+}
+#about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+} 
+.main-about-us{
+    height: 600px;
+    width: 700px;
+}
+.main-about-us .about-us-image img{
+    width: 100%;
+}
+.main-about-us .about-us-paragraph h3{
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+.main-about-us .about-us-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.main-scope{
+    height: 600px;
+    width: 300px;
+    background-color: #ecece9;
+}
+.main-scope #scope{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding-top: 20px;
+}
+.main-scope h3{
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 20px 0px 0px 20px;
+}
+.main-scope .scope-quality, .scope-love, .scope-knowledge, .scope-commitment{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    box-shadow: 0px 0px 12px #d4d1d1;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+}
+.main-scope .scope-quality img, .scope-love img, .scope-knowledge img, .scope-commitment img{
+    width: 18%;
+}
+.main-scope .scope-quality h2, .scope-love h2, .scope-knowledge h2, .scope-commitment h2{
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
+}
+.main-scope .scope-quality p, .scope-love p, .scope-knowledge p, .scope-commitment p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
 }
