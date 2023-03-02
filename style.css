@@ -24,7 +24,7 @@ body{
 
 header{
     background-color: #FFD03A;
-    box-shadow: 0px 3px 10px #111;
+    box-shadow: 0px 3px 10px #413f3f;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -56,9 +56,9 @@ header .container nav .nav-list{
 }
 header .container nav .nav-list li a{
     color: #4B3000;
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
     padding: 4px;
     cursor: pointer;
     transition: 0.4s;
@@ -88,10 +88,8 @@ header .container nav .nav-list li a:hover::before{
     flex-wrap: wrap;
     gap: 40px;
     margin: 40px;
-    background-repeat: no-repeat;
 }
 #home .paragraph-home{
-    /* border: 2px solid black; */
     height: 500px;
     width: 500px;
     display: flex;
@@ -120,7 +118,6 @@ header .container nav .nav-list li a:hover::before{
 }
 #home .image-home img{
     width: 100%;
-    /* border: 2px solid black; */
     height: 500px;
     width: 500px;
     display: flex;
@@ -170,6 +167,7 @@ header .container nav .nav-list li a:hover::before{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding: 80px 50px 0px 50px;
 } 
 .main-about-us{
     height: 600px;
@@ -209,7 +207,7 @@ header .container nav .nav-list li a:hover::before{
     display: flex;
     align-items: center;
     gap: 7px;
-    box-shadow: 0px 0px 10px #b9b7b7;
+    box-shadow: 0px 0px 10px #797474;
     border-radius: 10px;
     width: 80%;
     padding: 10px;
@@ -225,4 +223,62 @@ header .container nav .nav-list li a:hover::before{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 17px;
+}
+#products{
+    text-align: center;
+    gap: 40px;
+    margin: 100px 40px 0px 40px;
+}
+#products h1{
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+#products p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+.site-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+
+}
+#products .site-products .product-area-tshirt, .product-area-honeycomb, .product-area-honeypot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #797474;
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+#products .site-products .product-area-tshirt:hover, .product-area-honeycomb:hover, .product-area-honeypot:hover{
+    border: 1px solid black;
+}
+.product-area-tshirt img, .product-area-honeypot img{
+    width: 100%;
+}
+.product-area-honeycomb img{
+    width: 137%;
+}
+.product-area-tshirt h6, .product-area-honeycomb h6, .product-area-honeypot h6{
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #006E62;
 }
