@@ -220,7 +220,7 @@ header .bar{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 80px 50px 80px 50px;
+    padding: 80px 50px;
 } 
 .main-about-us{
     height: 600px;
